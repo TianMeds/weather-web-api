@@ -1,1 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color: #fff ;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 120%;
+}
+.weatherApp{
+    opacity: 90%;
+    background: #222;
+    color: var(--color);
+    padding:2em;    
+    border-radius: 1.8em;
+    width: 100%;
+    height: 500px; 
+    max-width: 720px;
+    margin: 1em;
+}
+.searchBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  background: transparent;
+  padding: 1rem;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none; 
+}
+input[type="text"] {
+    margin: 0 0.5rem 0 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+    color: var(--color);
+}
+.search::placeholder{
+    font-size: 15px;
+    color: rgb(210, 210, 210);
+}
+.city{
+    text-align: center;
+    font-size: 30px;
+}
+.degree{
+    text-align: center;
+    font-size: 40px;
+}
+.current{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hi-low, .wind{
+    font-size: 16px;
+}
+.weather{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.location.information{
+    max-height: 20px;
+    position: relative;
+}
+.location.information.after{
+    visibility: visible;
+    content: "Loading...";
+    color: var(--color);
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.footer{
+    position: fixed;
+    margin: auto;
+    padding: 10px 0px 0px 0px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+}
+.footer h4{
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 700px) {
+    .weatherApp{
+        height: 500px;
+    }
+    input[type="text"] {
+        font-size: 25px;
+    }
+    .search::placeholder{
+        font-size: 25px;
+    }
+    .city{
+        font-size: 40px;
+    }
+    .degree{
+        text-align: center;
+        font-size: 50px;
+    }
+    .footer{
+        position: fixed;
+        padding: 10px 10px 50px 150px;
+        bottom: 0;
+        width: 100%;
+        /* Height of the footer*/
+        height: 40px;
+    }
+    .footer h4{
+        font-size: 20px;
+    }
+}
 

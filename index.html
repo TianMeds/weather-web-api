@@ -12,14 +12,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/TianMeds/my-Official-Portfolio/main/img/Favicon.png" type="image/x-icon" />
 
     <!--Script-->
     <script src="/script.js" defer></script> 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </head>
 <body>
-    
+    <div class="weatherApp">
+        <div class="searchBar">
+            <div class="fa-solid fa-magnifying-glass"></div>
+            <input type="text" class="search" id="search" placeholder="Search for a city..." autocomplete="off">
+            <div class="fa fa-times" onclick="clearInput()"></div>
+        </div>
+        <br>
+
+        <div class="location information">
+            <h2 class="city">Makati, PH</h2>
+            <br>
+            <h1 class="degree">31°C</h1>
+            <br>
+            <div class="current">
+                <div class="weather">Sunny</div>
+            </div>
+
+            <br><br>
+            <div class="hi-low">Hi/Low: 16°c / 13°c</div>
+            <div class="wind">Wind speed: 6.2 km/h</div>
+        </div>
+
+        <div class="footer">
+            <h4>Developed by💻 <b> Christian B. Medallada</b></h4>
+        </div>
+    </div>
+
 </body>
 </html>
